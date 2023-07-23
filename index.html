@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body class="bg-light">
+  <div class="container text-center">
+    <h1 class="p-3">My Links</h1>
+    <section class="form bg-white p-3 border m-3 rounded">
+      <form id="form-links" class="d-flex flex-column gap-4">
+        <input type="text" class="form-control" id="input-title" placeholder="Ingresa el título..." required autofocus>
+        <input type="url" id="input-url" class="form-control" placeholder="Ingresa la url..." required>
+        <button type="submit" id="btn-add" class="btn btn-danger">Agregar</button>
+      </form>
+    </section>
+    <section class="links-container row" id="links-container"></section>
+
+    <script src="./app.js"></script>
+  </div>
+</body>
+</html>
